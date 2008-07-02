@@ -1,11 +1,18 @@
 #!/usr/bin/env ruby
 
-def input_command
-  STDOUT << ">> "
-  gets.chomp
+require 'readline'
+include Readline
+
+context = File.expand_path(ARGV[0])
+
+Readline.completion_proc = proc do |string|
+  `git branch | grep #{string}`.split("\n").collect{ |b| b.gsub("*", "").strip }
 end
 
-while (git_command = input_command)
-  exit if git_command == "exit"
-  puts `git #{git_command}`
+while cmd = readline("#{context}> ")
+  case cmd
+    when "exit": exit
+    when /^cd (.*)/: context = File.expand_path(File.join(context, $1))
+    else puts `cd #{context}; git #{cmd}`
+  end
 end
