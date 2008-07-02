@@ -1,7 +1,7 @@
-igit
-    by Colin Campbell-McPherson (colin@logaan.net)
-    
-    http://github.com/logaan/igit
+== igit
+
+by Colin Campbell-McPherson (colin@logaan.net)
+http://github.com/logaan/igit
 
 == DESCRIPTION:
   
@@ -10,7 +10,10 @@ down on the use of the git prefix to commands when preforming intense git tasks.
 
 == USAGE
 
-Open up an new instance with 'igit' or 'igit <path>' (eg. igit /Users/logaan/programming/igit).
+Open up an new instance with
+  igit
+or
+ igit <path>
 
 When inside igit you will see a prompt with the current working directory. From here you may run
 any git command without prefixing it with the word git (eg. push origin master rather than git-push
