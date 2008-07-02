@@ -1,6 +1,7 @@
 == igit
 
 by Colin Campbell-McPherson (colin@logaan.net)
+
 http://github.com/logaan/igit
 
 == DESCRIPTION:
@@ -16,11 +17,10 @@ or
  igit <path>
 
 When inside igit you will see a prompt with the current working directory. From here you may run
-any git command without prefixing it with the word git (eg. push origin master rather than git-push
-origin master).
+any git command without prefixing it with the word git (eg. __push origin master__ rather than @@git-push origin master@@).
 
-The working directory is set to the <path> passed to get when loading it (defaults to '.'). It may
-be changed by issuing a cd command (eg. cd ../tests) from within igit.
+The working directory is set to the \<code><path></code> passed to get when loading it (defaults to '.'). It may
+be changed by issuing a cd command (eg. @cd ../tests@) from within igit.
 
 By typing part of a branch name and hitting tab you will be provided with name completion or a list
 of potential branches.
