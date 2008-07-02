@@ -7,7 +7,7 @@ http://github.com/logaan/igit
 == DESCRIPTION:
   
 igit provides a simple interactive git console with branch name tab completion. It aims to cut
-down on the use of the git prefix to commands when preforming intense git tasks.
+down on the use of the git prefix to commands when performing intense git tasks.
 
 == USAGE
 
@@ -17,10 +17,11 @@ or
  igit <path>
 
 When inside igit you will see a prompt with the current working directory. From here you may run
-any git command without prefixing it with the word git (eg. __push origin master__ rather than @@git-push origin master@@).
+any git command without prefixing it with the word git (eg. <tt>push origin master</tt> rather than
+<tt>git-push origin master</tt>).
 
-The working directory is set to the \<code><path></code> passed to get when loading it (defaults to '.'). It may
-be changed by issuing a cd command (eg. @cd ../tests@) from within igit.
+The working directory is set to the <tt><path></tt> passed to get when loading it (defaults to '.').
+It may be changed by issuing a <tt>cd</tt> command (eg. <tt>cd ../tests</tt>) from within igit.
 
 By typing part of a branch name and hitting tab you will be provided with name completion or a list
 of potential branches.
