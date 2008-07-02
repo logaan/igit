@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.author = "Colin Campbell-McPherson"
   s.email = "colin@logaan.net"
   s.summary = "Simple ineractive git console."
+  s.homepage = "http://github.com/logaan/igit"
   
   s.description = <<-END
   Will install the igit command. This opens up a console where

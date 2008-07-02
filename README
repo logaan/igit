@@ -1,2 +1,33 @@
-igit (Interactive Git) is an application that will take you into a git environment similar to
-IRB. 
+igit
+    by Colin Campbell-McPherson (colin@logaan.net)
+    
+    http://github.com/logaan/igit
+
+== DESCRIPTION:
+  
+igit provides a simple interactive git console with branch name tab completion. It aims to cut
+down on the use of the git prefix to commands when preforming intense git tasks.
+
+== USAGE
+
+Open up an new instance with 'igit' or 'igit <path>' (eg. igit /Users/logaan/programming/igit).
+
+When inside igit you will see a prompt with the current working directory. From here you may run
+any git command without prefixing it with the word git (eg. push origin master rather than git-push
+origin master).
+
+The working directory is set to the <path> passed to get when loading it (defaults to '.'). It may
+be changed by issuing a cd command (eg. cd ../tests) from within igit.
+
+By typing part of a branch name and hitting tab you will be provided with name completion or a list
+of potential branches.
+  
+== CONTRIBUTE:
+
+Latest code is available at http://github.com/logaan/igit
+
+The 'master' branch can be cloned with:
+
+  $ git clone git://github.com/logaan/igit.git
+  
+I'm open to accepting any contributions, just contact me through github.
