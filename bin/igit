@@ -3,16 +3,25 @@
 require 'readline'
 include Readline
 
+# Grab the full path specified or the full current path
 context = File.expand_path(ARGV[0] || ".")
 
+# This command will be executed whenever someone tried to auto complete
 Readline.completion_proc = proc do |string|
+  # Call git branch, filtering down to branches that match the word they're trying to complete
+  # Split the rows into an array and strip off the asterisc and any whitespace
   `git branch | grep #{string}`.split("\n").collect{ |b| b.gsub("*", "").strip }
 end
 
+# Display the current context as the prompt and ask for the next command
 while cmd = readline("#{context}> ")
+  # Interpret the commands
   case cmd
+    # You'll never guess
     when "exit": exit
+    # Change the current context and re-calculate full path
     when /^cd (.*)/: context = File.expand_path(File.join(context, $1))
+    # Otherwise just run the git command inside the current context
     else puts `cd #{context}; git #{cmd}`
   end
 end

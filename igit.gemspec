@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "igit"
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.platform = Gem::Platform::RUBY
   s.author = "Colin Campbell-McPherson"
   s.email = "colin@logaan.net"
