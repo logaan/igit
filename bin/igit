@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+def input_command
+  STDOUT << ">> "
+  gets.chomp
+end
+
+while (git_command = input_command)
+  exit if git_command == "exit"
+  puts `git #{git_command}`
+end
