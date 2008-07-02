@@ -3,7 +3,7 @@
 require 'readline'
 include Readline
 
-context = File.expand_path(ARGV[0])
+context = File.expand_path(ARGV[0] || ".")
 
 Readline.completion_proc = proc do |string|
   `git branch | grep #{string}`.split("\n").collect{ |b| b.gsub("*", "").strip }
