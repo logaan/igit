@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "igit"
-  s.version = "0.0.3"
-  s.date = "2008-06-03"
+  s.version = "0.0.4"
+  s.date = "2008-07-17"
   s.summary = "Simple ineractive git console."
   s.email = "colin@logaan.net"
   s.homepage = "http://github.com/logaan/igit"

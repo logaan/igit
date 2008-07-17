@@ -25,6 +25,9 @@ It may be changed by issuing a <tt>cd</tt> command (eg. <tt>cd ../tests</tt>) fr
 
 By typing part of a branch name and hitting tab you will be provided with name completion or a list
 of potential branches.
+
+There have been some permission issues with the gem built by github (gem install logaan-igit). If
+you are affected try using <tt>sudo igit</tt>.
   
 == CONTRIBUTE:
 
